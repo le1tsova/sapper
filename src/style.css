@@ -1,0 +1,52 @@
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.square {
+  background: rgb(233, 230, 230);
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 34px;
+  margin-right: -1px;
+  margin-top: -1px;
+
+  text-align: center;
+  width: 34px;
+}
+
+.square__button {
+  height: 34px;
+  width: 34px;
+  background: rgb(197, 197, 197, 0.5);
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  padding: 0;
+}
+
+.square__button:active,
+.square__button:focus {
+  outline: none;
+}
+.button__new-game {
+  margin: 10px;
+  height: 50px;
+  width: 150px;
+  background: rgb(197, 197, 197);
+  margin-right: 80px;
+  margin-left: 20px;
+}
+.game-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.face {
+  font-size: 46px;
+  margin: 0;
+}
