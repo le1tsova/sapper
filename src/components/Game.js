@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import "../../src/style.css";
 import Cell from "./Cell";
 
 export default function Game(props) {
@@ -7,11 +7,9 @@ export default function Game(props) {
     <div className="board-row" key={index}>
       {line.map(elementCol => (
         <Cell
-          value={elementCol.value}
-          status={elementCol.status}
-          id={elementCol.id}
-          onClick={props.onClick}
+          {...elementCol}
           key={elementCol.id}
+          onClick={props.onClick}
           onContextMenu={props.onContextMenu}
         />
       ))}
